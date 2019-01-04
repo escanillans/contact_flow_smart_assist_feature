@@ -26,7 +26,7 @@ __Notes:__
 2. You will have to edit the *serverless.yml* and *recommender.py* scripts to fit your own requirements.
 
 __Example:__
-Try out a working solution (https://ghguq2g52j.execute-api.us-east-1.amazonaws.com/dev/?query=), where you type your query after '?query='. 
+Try out a working solution where you type your query after '?query='. 
 
 For example, if I was interested in updating my beneficiaries, then I would make the following request: `https://ghguq2g52j.execute-api.us-east-1.amazonaws.com/dev/?query=update my beneficiary`.
 
