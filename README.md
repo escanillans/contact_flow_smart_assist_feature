@@ -24,4 +24,4 @@ __Notes:__
 
 1. I've uploaded the dataset to this repository if you would like to experiment with it. I do not show how the data was extracted, but I use a similar format to [this repository](https://github.com/escanillans/web_scraping). 
 2. You will have to edit the *serverless.yml* and *recommender.py* scripts to fit your own requirements.
-3. Try out a working solution (https://ghguq2g52j.execute-api.us-east-1.amazonaws.com/dev/?query=), where you type your query after '?query='. For example, if I was interested in updating my beneficiaries, then I would make the following request: https://ghguq2g52j.execute-api.us-east-1.amazonaws.com/dev/?query=update my beneficiary.
+3. Try out a working solution (https://ghguq2g52j.execute-api.us-east-1.amazonaws.com/dev/?query=), where you type your query after '?query='. For example, if I was interested in updating my beneficiaries, then I would make the following request: `https://ghguq2g52j.execute-api.us-east-1.amazonaws.com/dev/?query=update my beneficiary`.
