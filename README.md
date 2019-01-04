@@ -26,9 +26,3 @@ __Notes:__
 2. I recommend you create a *serverless.yml* if you would like to work with a Serverless framework.
 3. Edit the *recommender.py* script to fit your own requirements.
 
-__Example:__
-Try out a working solution where you type your query after '?query='. 
-
-For example, if I was interested in updating my beneficiaries, then I would make the following request: `https://ghguq2g52j.execute-api.us-east-1.amazonaws.com/dev/?query=update my beneficiary`.
-
-The output is in JSON format, which makes it easier to parse. The original utterance is returned as well as the top three articles along with their respective link and cosine similarity score (**not** a probability score). Note that the number of articles returned can be changed. By default we set it to three. 
