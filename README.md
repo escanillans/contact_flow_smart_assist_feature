@@ -30,31 +30,4 @@ Try out a working solution (https://ghguq2g52j.execute-api.us-east-1.amazonaws.c
 
 For example, if I was interested in updating my beneficiaries, then I would make the following request: `https://ghguq2g52j.execute-api.us-east-1.amazonaws.com/dev/?query=update my beneficiary`.
 
-Doing so will output the following:
-`{
-result: {
-utterance: "update my beneficiary",
-articles: [
-{
-Rank: 1,
-Title: "The Basics Of A Beneficiary",
-Link: "https://tristarins.com/life-insurance-plano-tx/",
-score: 0.29831249039627694
-},
-{
-Rank: 2,
-Title: "Choosing a Life Insurance Beneficiary",
-Link: "https://www.amfam.com/resources/articles/navigating-life-insurance/choosing-a-beneficiary",
-score: 0.19850879067617114
-},
-{
-Rank: 3,
-Title: "Everything You Need to Know About Designating a Beneficiary",
-Link: "https://www.rjonesinsurance.com/designating-a-beneficiary/",
-score: 0.17387246417071017
-}
-]
-}
-}` 
-
-Notice the output is in JSON format, which makes it easier to parse. The original utterance is returned as well as the top three articles along with their link and cosine similarity score (**not** a probability score). The number of articles returned can be changed. By default we set it to three. 
+The output is in JSON format, which makes it easier to parse. The original utterance is returned as well as the top three articles along with their respective link and cosine similarity score (**not** a probability score). Note that the number of articles returned can be changed. By default we set it to three. 
