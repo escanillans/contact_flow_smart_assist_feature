@@ -23,7 +23,8 @@ __Technical Components:__
 __Notes:__
 
 1. I've uploaded the dataset to this repository if you would like to experiment with it. I do not show how the data was extracted, but I use a similar format to [this repository](https://github.com/escanillans/web_scraping). 
-2. You will have to edit the *serverless.yml* and *recommender.py* scripts to fit your own requirements.
+2. I recommend you create a *serverless.yml* if you would like to work with a Serverless framework.
+3. Edit the *recommender.py* script to fit your own requirements.
 
 __Example:__
 Try out a working solution where you type your query after '?query='. 
