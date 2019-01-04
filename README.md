@@ -24,4 +24,37 @@ __Notes:__
 
 1. I've uploaded the dataset to this repository if you would like to experiment with it. I do not show how the data was extracted, but I use a similar format to [this repository](https://github.com/escanillans/web_scraping). 
 2. You will have to edit the *serverless.yml* and *recommender.py* scripts to fit your own requirements.
-3. Try out a working solution (https://ghguq2g52j.execute-api.us-east-1.amazonaws.com/dev/?query=), where you type your query after '?query='. For example, if I was interested in updating my beneficiaries, then I would make the following request: `https://ghguq2g52j.execute-api.us-east-1.amazonaws.com/dev/?query=update my beneficiary`.
+
+__Example:__
+Try out a working solution (https://ghguq2g52j.execute-api.us-east-1.amazonaws.com/dev/?query=), where you type your query after '?query='. 
+
+For example, if I was interested in updating my beneficiaries, then I would make the following request: `https://ghguq2g52j.execute-api.us-east-1.amazonaws.com/dev/?query=update my beneficiary`.
+
+Doing so will output the following:
+`{
+result: {
+utterance: "update my beneficiary",
+articles: [
+{
+Rank: 1,
+Title: "The Basics Of A Beneficiary",
+Link: "https://tristarins.com/life-insurance-plano-tx/",
+score: 0.29831249039627694
+},
+{
+Rank: 2,
+Title: "Choosing a Life Insurance Beneficiary",
+Link: "https://www.amfam.com/resources/articles/navigating-life-insurance/choosing-a-beneficiary",
+score: 0.19850879067617114
+},
+{
+Rank: 3,
+Title: "Everything You Need to Know About Designating a Beneficiary",
+Link: "https://www.rjonesinsurance.com/designating-a-beneficiary/",
+score: 0.17387246417071017
+}
+]
+}
+}` 
+
+Notice the output is in JSON format, which makes it easier to parse. The original utterance is returned as well as the top three articles along with their link and cosine similarity score (**not** a probability score). The number of articles returned can be changed. By default we set it to three. 
